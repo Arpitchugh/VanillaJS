@@ -33,26 +33,24 @@ function BubbleSort() {
 }
 
 // Insertion sort
-// let arr = [8, 3, 5, 3, 7, 1]; 
 // used consoles to understand the working of the algorithm, remove them !!!!
 function InsertionSort(array) {
 	for (let i = 1; i < array.length; i++) {
 		let key = array[i];
 		let j = i - 1;
-		// console.log(`key : ${key}`);
+		console.log(`key : ${key}`);
 		while (j >= 0 && array[j] > key) {
-			// console.log(`index at ${j}: ${array[j]}`);
-			// console.log(`index at ${j + 1}: ${array[j + 1]}`);
+			console.log(`index at ${j}: ${array[j]}\n`);
+			console.log(`index at ${j + 1}: ${array[j + 1]}\n`);
 			array[j + 1] = array[j];
-			// console.log(array[j + 1]);
 			j--;
 		}
-		// console.log(`index at ${j + 1}: ${array[j + 1]}`);
+		console.log(`index at ${j + 1}: ${array[j + 1]}\n`);
 		array[j + 1] = key;
-		// console.log(`index at ${j + 1}: ${array[j + 1]}`);
+		console.log(`index at ${j + 1}: ${array[j + 1]}`);
 	}
 }
-// InsertionSort(arr);
+InsertionSort(arr);
 
 function MergeSort(array) {
 	let l = 0;
@@ -107,6 +105,9 @@ function MergeSort(array) {
 }
 // MergeSort(array)
 
+function HeapSort(array){
+	 
+}
 console.log(arr);
 
 // =================================================================================
