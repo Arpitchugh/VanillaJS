@@ -115,9 +115,9 @@ for(const key in aboutMe){
 // using .value() method
 const list1 = Object.values(aboutMe);
 // using .entries() method
-const list2 = Object.entries(aboutMe); // convert object to a 2D array
+const list2 = Object.entries(aboutMe); // convert object to a 2D array => [[key, value], [key, value], [key, value]]
 
-// using .keys() method
+// using .keys() method 
 const list3 = Object.keys(aboutMe); // return all keys of the object
 
 // store key form object in an array
@@ -127,3 +127,20 @@ for( const key in aboutMe){
 }
 
 console.log(list4);
+
+
+// ===============
+
+function oje(){
+	let name1 = 'Arpit';
+	const display = () => {
+		console.log('hi ' + name1)
+	}
+}
+console.log(oje.name1);
+
+let person = {name: 'Arpit', age: 21};
+const member = [person];
+member.name = 'chugh';
+console.log(member)
+console.log(person)
