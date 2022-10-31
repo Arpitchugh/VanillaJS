@@ -18,7 +18,7 @@ const UseReducerHook = () => {
 		<>
 			<h1>{state.count}</h1>
 			<button onClick={() => dispatch({ type: 'increment' })}>
-				want more? 👀
+				want more? 😁
 			</button>
 			<button onClick={() => dispatch({ type: 'decrement' })}>
 				to spicy 🥵
